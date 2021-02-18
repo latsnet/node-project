@@ -22,9 +22,9 @@ function render(input, out, __component, component, state) {
   marko_forOf(data.livros, function(livro) {
     var $keyScope$0 = "[" + (($for$0++) + "]");
 
-    out.w("<tr><td>" +
+    out.w("<tr><td><strong>" +
       marko_escapeXml(livro.id) +
-      "</td><td>" +
+      "</strong></td><td>" +
       marko_escapeXml(livro.titulo) +
       "</td></tr>");
   });
@@ -33,7 +33,7 @@ function render(input, out, __component, component, state) {
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "12");
+  await_reorderer_tag({}, out, __component, "13");
 
   _preferred_script_location_tag({}, out);
 
